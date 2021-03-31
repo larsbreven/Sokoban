@@ -1,30 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise02JS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
     <link rel="stylesheet" href="site.css" />
-</head>
-<body>
-    <h1>Hello World</h1> <!-- Will be overwritten by the javaScript -->
-    <h2>JavaScript will show the current date, weekday and the time updated every second</h2>
-
-    <p id="date"></p>
-    <p id="time"></p>
-   
-    <p>Enter a year, valid numbers are from year 1 up to year 3021:</p>
-
-    <form action="/action_page.php">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
-      <input type="submit" value="Submit">
+  </head>
+  <body>
+    <form>
+      <!--<input id="userInputText" type="text" />-->
+      <select id="userSelect">
+        <option value="0">Red</option>
+        <option value="1">Green</option>
+        <option value="2">Blue</option>
+        <option value="3">White</option>
+        <option value="4">Black</option>
+      </select>
+      <button id="btnTrigger" onclick="createElementInsidePlayGround(event)">
+        Trigger
+      </button>
     </form>
+    <h1 id="messageElement"></h1>
+    <div id="playGround"></div>
 
-
-    <script src="SokobanBase.js"></script> 
-</body>
+    <script src="sokoban.js"></script>
+  </body>
 </html>
