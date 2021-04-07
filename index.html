@@ -2,34 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
-
+    <title>Sokoban</title>
     <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <form>
-      <!--<input id="userInputText" type="text" />-->
-      <select id="userSelect">
-        <option value="0">Red</option>
-        <option value="1">Green</option>
-        <option value="2">Blue</option>
-        <option value="3">White</option>
-        <option value="4">Black</option>
-      </select>
-      <button id="btnTrigger" onclick="createElementInsidePlayGround(event)">
-        Trigger
-      </button>
+    <div class="centerThis movementDiv">
+      <p>Move green box</p>
+      <button onclick="move(-1)">left</button>
+      <button onclick="move(1)">right</button>
+    </div>
+    <div id="board" class="centerThis"></div>
 
-
-
-    </form>
-    <h1 id="messageElement"></h1>
-    <div id="playGround"></div>
-
-    <p id="demo"></p>
-
-    <script src="SokobanBase.js"></script>
-    <script src="sokoban.js"></script>
-
+    <script src="myJS.js"></script>
   </body>
 </html>
