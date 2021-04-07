@@ -47,7 +47,7 @@ function move(offsetPos) {
     var playerNextElementId = Number(playerElement.id) + Number(offsetPos);
     var playerNextBox = document.getElementById(playerNextElementId);
     console.log(playerNextBox);
-
+    
     if (playerNextElementId !== 0 && playerNextElementId <= idCounter) {
         playerElement.classList.toggle("player");
         playerNextBox.classList.toggle("player");
