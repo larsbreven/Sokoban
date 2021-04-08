@@ -57,6 +57,10 @@ function move(offsetPos) {
 }
 
 
+
+
+
+
 //------ run code lines -----------------------------------------------------------------------------------
 
 document.getElementsByTagName("body")[0].style.backgroundColor = "gray";
