@@ -1,16 +1,9 @@
 #board {
-  background-color: lightgray;
-  width: 600px;
-  height: 300px;
-}
-
-.centerThis {
+  background-color: lightgrey;
+  width: 950px;
+  height: 800px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.movementDiv {
-  width: 300px;
 }
 
 .box {
@@ -19,14 +12,27 @@
   float: left;
 }
 
-.blackBox {
-  background-color: black;
+.wall {
+  height: 50px;
+  width: 50px;
+  background-image: url(image/wall.png);
+
 }
 
-.whiteBox {
-  background-color: white;
+.goalArea {
+  height: 50px;
+  width: 50px;
+  background-image: url(image/goldmedal.jpg);
+    }
+
+.movableBlock{
+  height: 50px;
+  width: 50px;
+  background-image: url(image/block.png);
 }
 
 .player {
-  background-color: green;
-}
+  height: 50px;
+  width: 50px;
+  background-image: url(image/player.jpg);
+  }
