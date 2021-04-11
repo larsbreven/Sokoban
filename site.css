@@ -16,14 +16,13 @@
   height: 50px;
   width: 50px;
   background-image: url(image/wall.png);
-
 }
 
 .goalArea {
   height: 50px;
   width: 50px;
   background-image: url(image/goldmedal.jpg);
-    }
+}
 
 .movableBlock{
   height: 50px;
@@ -35,4 +34,4 @@
   height: 50px;
   width: 50px;
   background-image: url(image/player.jpg);
-  }
+}

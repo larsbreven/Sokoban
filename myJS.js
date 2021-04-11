@@ -17,7 +17,7 @@ function makeTheBoxes(boxType,verticalPos,horizontalPos) {
   let newBox = document.createElement("div");
   newBox.classList.add("box");
   newBox.id = "verticalPos"+ verticalPos + "horizontalPos" + horizontalPos;
-
+ 
   switch (boxType) {
     case "W":                           // Wall (W = grid from tileMap01)
       newBox.classList.add("wall");
@@ -26,8 +26,6 @@ function makeTheBoxes(boxType,verticalPos,horizontalPos) {
       newBox.classList.add("movableBlock");
       break;
     case "P":                           // Player (P = grid from tileMap01)
-      playerPos.horizontalPos = horizontalPos;
-      playerPos.verticalPos = verticalPos; 
       newBox.classList.add("player");
       break;
     case "G":                           // Goal area (G = grid from tileMap01)
