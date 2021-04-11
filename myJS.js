@@ -3,7 +3,7 @@
 const gameBoard = document.getElementById("board");
 let playerPos = {horizontalPos:0,verticalPos:0};
 
-// ------------------------------ Functions ----------------------------------
+// --------------------- Functions for map-layout and boxes ------------------
 
 function createGameBoard() {
     for (let verticalPos = 0; verticalPos < tileMap01.height; ++verticalPos) {
@@ -26,7 +26,14 @@ function makeTheBoxes(boxType,verticalPos,horizontalPos) {
     gameBoard.appendChild(newBox);
 }
 
+// ----------------------- Functions for player movement ---------------------
+
+
+
+
+
 // --------------------- Run code lines --------------------------------------
+
 document.getElementsByTagName("body")[0].style.backgroundColor = "lightgrey";
 
 createGameBoard();
