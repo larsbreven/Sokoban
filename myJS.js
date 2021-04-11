@@ -16,7 +16,7 @@ function createGameBoard() {
 function makeTheBoxes(boxType,verticalPos,horizontalPos) {
   let newBox = document.createElement("div");
   newBox.classList.add("box");
-  newBox.id= "verticalPos"+ verticalPos + "horizontalPos" + horizontalPos;
+  newBox.id = "verticalPos"+ verticalPos + "horizontalPos" + horizontalPos;
 
   switch (boxType) {
     case "W":                           // Wall (W = grid from tileMap01)
